@@ -4,6 +4,7 @@ import {
   PlateMapRowType,
   ClashStrategyType,
   StrategyType,
+  SeparatorType,
 } from "plate-data-transfer";
 
 interface KeySetType {
@@ -27,6 +28,21 @@ interface PlateIdConfigType {
 interface AnyStringObjectType {
   [key: string]: string;
 }
+
+interface SpecificColumnClashesType {
+  source: string;
+  destination: string;
+  column: string;
+  strategy: StrategyType;
+  concatenation_separator: SeparatorType;
+}
+
+interface PlateColumnSuffixObjectType {
+  [key: string]: string[][];
+}
+// interface plateMapColumnType {
+// "Plate": []
+// }
 export type {
   TransferInstructionsRowType,
   KeySetType,
@@ -35,4 +51,6 @@ export type {
   PlateMapRowType,
   ClashStrategyType,
   StrategyType,
+  SpecificColumnClashesType,
+  PlateColumnSuffixObjectType,
 };

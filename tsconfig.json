@@ -19,20 +19,13 @@
     "experimentalDecorators": true,
     "sourceMap": true,
     "outDir": "./dist/tsc/",
-    "types": [
-      "node",
-      "jest"
-    ],
+    "types": ["node", "jest"],
     "lib": [
-      "ES6",
+      "ES2016", //changed from es6, hope this doesn't f anything
+      // "ES6",
       "DOM"
     ]
   },
-  "include": [
-    "src/**/*.ts"
-  ],
-  "exclude": [
-    "node_modules",
-    "**/*.test.ts"
-  ]
+  "include": ["src/**/*.ts"],
+  "exclude": ["node_modules", "**/*.test.ts"]
 }

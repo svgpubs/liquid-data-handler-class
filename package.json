@@ -47,6 +47,7 @@
     "typescript": "^4.2.3"
   },
   "dependencies": {
+    "array-object-transformer": "0.0.3",
     "lodash": "4.17.21",
     "plate-data-transfer": "0.0.4",
     "well-id-formatter": "1.2.4"
